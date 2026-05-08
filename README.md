@@ -14,6 +14,8 @@ This project is organized into three main folders:
 
 There are also a few core configuration files:
 - 📄 **`AGENTS.md`**: The rulebook for the AI. It tells the agent how to manage folders, synthesize knowledge, and keep things organized.
+- 📄 **`CONFIG.md`**: The settings file where you can turn additional AI modules (like Knowledge Graph) ON or OFF.
+- 📄 **`wiki/graph/network.md`**: A lightweight text-based Knowledge Graph. The AI maps relationships block here (e.g., `[[A]] --(is related to | W:0.9)--> [[B]]`) so it doesn't have to read every file to understand the big picture.
 
 *(Note: The AI will generate `index.md` and `log.md` automatically as you use the system).*
 
@@ -39,5 +41,22 @@ You don't need to be a programmer to use this! You just need an AI Assistant tha
 ### Step 4: Keep it Tidy (Lint)
 1. Every couple of weeks, ask the AI to clean things up:
    > *"Please review the wiki folder. Check for contradictions, dead links, or missing cross-references as described in the Lint workflow in AGENTS.md."*
+
+---
+
+## 🔌 Optional: Knowledge Graph Mode (Plug & Play)
+
+This starter includes a built-in, text-based Knowledge Graph (`wiki/graph/network.md`) to make your AI smarter and save processing power (tokens). It maps connections automatically with priority weights, like: `[[Concept A]] --(relates to | W:0.9)--> [[Concept B]]`.
+
+**To activate Knowledge Graph Mode persistently:**
+1. Open the **`CONFIG.md`** file in this folder.
+2. Change the checkbox from `[ ]` to `[x]` next to the knowledge graph module.
+
+The AI Agent will automatically check this configuration file every time you start a new chat session. You no longer need to instruct it manually!
+
+**Why turn this on?**
+- **Super Token-Saving:** The AI doesn't need to read 100 notes to find an answer. It looks at the text map (`wiki/graph/network.md`) first, then only opens the 2 or 3 files it actually needs.
+- **Smart Priority:** By parsing connection weights (`W:0.9` vs `W:0.2`), the AI knows which relationships are critical and which are just trivia.
+- **Zero Setup:** It runs entirely on plain text reasoning. No database scaling or extra coding required!
 
 Enjoy building your AI-powered second brain!
