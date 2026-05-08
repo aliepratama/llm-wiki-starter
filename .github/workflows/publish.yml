@@ -1,6 +1,8 @@
 name: Publish CLI to NPM & GitHub Releases
 
 on:
+  workflow_dispatch:
+
   push:
     tags:
       - 'v*' # Akan trigger otomatis kalau Anda nge-push tag seperti v1.0.0
