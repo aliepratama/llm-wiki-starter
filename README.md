@@ -1,8 +1,10 @@
 # LLM Wiki Starter
 
-Welcome to the LLM Wiki Starter! This is a framework for building a personal knowledge base using AI (LLM) agents. 
+Welcome to the **LLM Wiki Starter**! A framework for building a personal knowledge base using AI (LLM) agents. Instead of starting from zero every time you ask an AI a question, this system helps the AI build a persistent, interlinked wiki that gets smarter the more you use it.
 
-Instead of starting from zero every time you ask an AI a question, this system helps the AI build a persistent, interlinked wiki that gets smarter the more you use it.
+✅ **Simple RAG alternative:** No vector databases or hard config required.
+✅ **Token-efficient:** Uses text-based Knowledge Graphs to read fewer files.
+✅ **Plug-and-play:** Persistently remembers your settings across all chat sessions.
 
 ## Folder Structure
 
@@ -60,3 +62,17 @@ The AI Agent will automatically check this configuration file every time you sta
 - **Zero Setup:** It runs entirely on plain text reasoning. No database scaling or extra coding required!
 
 Enjoy building your AI-powered second brain!
+
+---
+
+## 🤝 Contributing
+
+This is a personal open-source project meant to help everyone. Feel free to use it, modify it, or contribute back!
+
+If you want to suggest a new AI module, fix a typo, or test edge cases:
+1. Check the [Contributing Guidelines](CONTRIBUTING.md) on how to submit a Pull Request.
+2. Found a bug where the AI gets confused? [Open an Issue](https://github.com/aliepratama/llm-wiki-starter/issues/new/choose).
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - free to use for personal or commercial work!
