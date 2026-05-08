@@ -1,5 +1,8 @@
 # LLM Wiki Starter
 
+[![npm version](https://img.shields.io/npm/v/create-llm-wiki-starter)](https://www.npmjs.com/package/create-llm-wiki-starter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Welcome to the **LLM Wiki Starter**! A framework for building a personal knowledge base using AI (LLM) agents. Instead of starting from zero every time you ask an AI a question, this system helps the AI build a persistent, interlinked wiki that gets smarter the more you use it.
 
 ✅ **Simple RAG alternative:** No vector databases or hard config required.
@@ -28,9 +31,10 @@ You don't need to be a programmer to use this! You just need an AI Assistant tha
 ### 🚀 Quick Start (via NPX)
 To instantly generate this starter in your computer, open your terminal and run:
 ```bash
-npx create-llm-wiki my-project
+npx create-llm-wiki-starter my-project
 cd my-project
 ```
+*💡 **Why NPX instead of NPM Install?** We use `npx` so you get the latest version of the starter template directly without permanently installing the package on your machine. It runs once, scaffolds your files, and leaves no clutter behind!*
 
 ### Step 1: Open the Project
 1. Open your newly created `my-project` folder in your code editor.

@@ -1,9 +1,9 @@
 {
-  "name": "create-llm-wiki",
-  "version": "1.0.0",
+  "name": "create-llm-wiki-starter",
+  "version": "1.0.2",
   "description": "CLI to scaffold a personal LLM Wiki Starter",
   "bin": {
-    "create-llm-wiki": "./bin/cli.js"
+    "create-llm-wiki-starter": "./bin/cli.js"
   },
   "files": [
     "bin/",
