@@ -25,8 +25,15 @@ There are also a few core configuration files:
 
 You don't need to be a programmer to use this! You just need an AI Assistant that has access to your files (like **GitHub Copilot** in VS Code, **Cursor**, or **Claude Code**).
 
+### 🚀 Quick Start (via NPX)
+To instantly generate this starter in your computer, open your terminal and run:
+```bash
+npx create-llm-wiki my-project
+cd my-project
+```
+
 ### Step 1: Open the Project
-1. Open this `llm-wiki-starter` folder in your code editor (e.g., VS Code or Cursor).
+1. Open your newly created `my-project` folder in your code editor.
 2. Open the AI Chat panel.
 
 ### Step 2: Add Knowledge (Ingest)
